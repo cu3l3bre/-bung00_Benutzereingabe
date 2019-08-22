@@ -31,8 +31,6 @@ namespace UebungBenutzereingabe
             Console.WriteLine("Uebeung zur Benutzereingabe");
             Console.WriteLine("---------------------------");
 
-           // String benutzerEingabe = "";
-
             String vorname = "";
             String nachname = "";
             String geburtsdatum = "";
@@ -62,6 +60,7 @@ namespace UebungBenutzereingabe
                     letters = vorname.ToCharArray();
                     letters[0] = char.ToUpper(letters[0]);
                     vorname =  new String (letters);
+                    //vorname = letters.ToString();
                 }
                 else
                 {
