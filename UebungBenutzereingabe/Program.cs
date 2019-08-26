@@ -31,6 +31,8 @@ namespace UebungBenutzereingabe
             Console.WriteLine("Uebeung zur Benutzereingabe");
             Console.WriteLine("---------------------------");
 
+            // Console.WriteLine( double.NaN);
+
             String vorname = "";
             String nachname = "";
             String geburtsdatum = "";
@@ -69,7 +71,7 @@ namespace UebungBenutzereingabe
                 
             }
 
-
+            
 
             eingabeOK = false;
 
@@ -123,6 +125,10 @@ namespace UebungBenutzereingabe
                         else
                         {
                             alter = DateTime.Today.Year - datum.Year; // rechnersich nicht ganz richtig :p
+                            if(datum.AddYears(alter)> DateTime.Today)
+                            {
+                                alter--;
+                            }
                             eingabeOK = true;
                         }
                     }
